@@ -5,4 +5,9 @@ def sum_to_10() -> None:
         s += n
         if n == 0:
             print(f'Current Number: {n} Previous Number:  {n}  Sum:  {s}')
-        print(f'Current Number: {n} Previous Number:  {n-1}  Sum:  {s}')
+        else:
+            print(f'Current Number: {n} Previous Number:  {n-1}  Sum:  {s}')
+
+
+if __name__ == '__main__':
+    sum_to_10()
