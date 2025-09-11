@@ -1,5 +1,5 @@
 '''
-Exercise 4
+Exercise 19
 You have a list of students with scores.
 
 Keep only those who passed (≥ 60).
