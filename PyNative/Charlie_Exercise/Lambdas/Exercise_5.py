@@ -7,5 +7,5 @@ Use map() to make a list of words uppercase.
 '''
 
 words: list[str] = ["hello", "python", "lambda"]
-upper = list(map(lambda x: x.upper(), words))
+upper: list[str] = list(map(lambda x: x.upper(), words))
 print(upper) 

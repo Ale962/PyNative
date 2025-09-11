@@ -13,7 +13,7 @@ students: dict[str, str|int] = [
     {"name": "Cara", "score": 62}
 ]
 
-pass_exam = list(map(lambda x: {'name': x['name'], 'status': 'pass'}, filter(lambda x: x['score'] >= 60, students)))
+pass_exam: list[dict[str, str]] = list(map(lambda x: {'name': x['name'], 'status': 'pass'}, filter(lambda x: x['score'] >= 60, students)))
 
 for student in pass_exam:
     print(student)

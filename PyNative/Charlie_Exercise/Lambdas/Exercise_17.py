@@ -9,5 +9,5 @@ people: list[dict[str, str|int]] = [
     {"name": "Bob", "age": 17},
     {"name": "Charlie", "age": 30}
 ]
-adult = list(map(lambda x: x['name'].upper(), filter(lambda x: x['age'] >= 18, people)))
+adult: list[str] = list(map(lambda x: x['name'].upper(), filter(lambda x: x['age'] >= 18, people)))
 print(adult)
